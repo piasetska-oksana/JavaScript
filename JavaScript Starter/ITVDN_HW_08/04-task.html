@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Дано массив. Создайте на основе значений этого массива два новых массива. В один массив поместите все четные значения, а во второй все нечетные.
+        Выведите на экран значения, которые вошли в первый массив и во второй массив.
+    </pre>
+    <script>
+        let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+
+        let evenNumbers = [];
+        let oddNumbers = [];
+
+        let indexEven = 0;
+        let indexOdd = 0;
+
+        for (let index = 0; index < values.length; index++)
+        {
+            const value = values[index];
+            if (value % 2 == 0)
+            {
+                evenNumbers[indexEven] = value;
+                indexEven++;
+            }
+            else
+            {
+                oddNumbers[indexOdd] = value;
+                indexOdd++;
+            }
+        }
+
+        console.log(`Масив із парними числами ${evenNumbers}.`);
+        console.log(`Масив із непарними числами ${oddNumbers}.`);
+    </script>
+</body>
+</html>
